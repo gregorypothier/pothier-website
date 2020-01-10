@@ -1,0 +1,12 @@
+.trends-background {
+  background: whitesmoke;
+}
+
+.trends-button {
+  margin: .25em .25em .25em .25em;
+  padding: .5em .5em .5em .5em;
+}
+
+.trends-header {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,104 @@
+li.tablist {
+  border-bottom: 0.02px solid #eee;
+  margin: 4px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: darkslateblue !important;
+}
+
+.fa-bitcoin {
+  color: #ff9900;
+}
+
+.fa-reddit {
+  color: #ff5700;
+}
+
+.fa-weixin {
+  color: rgb(255, 0, 0);
+}
+
+.fa-newspaper {
+  color: rgb(90, 90, 90);
+}
+
+.fa-twitter {
+  color: #1dcaff;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+.fa-github-square {
+  color: #211f1f;
+}
+
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 1px solid #aaa;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+
+.react-tabs__tab {
+  background: WhiteSmoke;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-color: #aaa;
+  bottom: -1px;
+  position: relative;
+  list-style: none;
+  padding: 6px 3px;
+  cursor: pointer;
+  margin: 0 0 0 1px;
+  border-radius: 5px 5px 0 0;
+}
+
+.react-tabs__tab--selected {
+  box-shadow: 0 0 0px hsl(208, 99%, 50%);
+  border-color: hsl(208, 99%, 50%);
+  border-bottom-color: #fff;
+  outline: none;
+  background: #fff;
+  color: black;
+  border-radius: 5px 5px 0 0;
+}
+
+.react-tabs__tab--disabled {
+  color: GrayText;
+  cursor: default;
+}
+
+.react-tabs__tab:focus:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  left: -4px;
+  right: -4px;
+  bottom: -5px;
+  background: #fff;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: white;
+  border: 0px solid rgb(160, 160, 150) !important;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}

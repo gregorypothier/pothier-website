@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  # Setup React Node frontend
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: frontend
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+    networks:
+      - backend
+    user: root
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt
+
+  # Setup Flask middleware
+  middleware:
+    container_name: middleware
+    image: middleware
+    build: ./middleware
+    volumes:
+      - ./middleware:/middleware
+    ports:
+      - "5000:5000"
+    environment:
+      FLASK_APP: /middleware/app/main.py
+      PYTHONPATH: /middleware/app
+    networks:
+      backend:
+        aliases:
+          - middleware
+
+# Setup bridge for API calls
+networks:
+  backend:
+    driver: "bridge"

@@ -1,0 +1,15 @@
+.ui.secondary.pointing.menu .active.item {
+  border-color: black;
+}
+
+.ui.secondary.pointing.menu {
+  border-bottom-color: transparent !important;
+}
+
+.navbar-items-mobile {
+  color: black;
+}
+
+.mobile-menu-inline {
+  display: inline-block;
+}

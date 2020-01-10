@@ -1,0 +1,26 @@
+.feed-title {
+  color: #404040;
+}
+
+.list-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-title {
+  padding: 6px 12px;
+  font-size: 16px;
+}
+
+.tab-headers {
+  display: flex;
+  font-size: 8px;
+  align-items: center;
+  line-height: 1em;
+}
+
+.tab-icons {
+  width: 18px;
+  height: 18px;
+  margin-right: 2px;
+}

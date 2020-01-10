@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/gpothier
+hooks:
+  ApplicationStop:
+    - location: scripts/kill_container.sh
+      timeout: 20
+  BeforeInstall:
+    - location: scripts/before_install.sh
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/start_container.sh
+      timeout: 5000
